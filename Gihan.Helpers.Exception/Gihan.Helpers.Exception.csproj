@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>Exception handling helpers</Description>
+    <ApplicationIcon />
+    <Version>0.1.0</Version>
+    <Authors>Muhammad Babayi</Authors>
+    <Company>GihanSoft</Company>
+  </PropertyGroup>
+
+</Project>
