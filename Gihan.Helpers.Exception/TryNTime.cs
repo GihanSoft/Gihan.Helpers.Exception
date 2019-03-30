@@ -9,15 +9,15 @@ namespace Gihan.Helpers.Exception
         {
             TryTimes = tryTimes;
         }
-        public bool TryCatch<T>(Action Try, Action<T> Catch) where T : Exception
+        public bool TryCatch<T>(Action Try, Action<T> Catch) where T : System.Exception
             => TryCatch(Try, null, Catch);
-        public bool TryCatch<T>(Action Try, Action<T, byte> eachTimeCatch, Action<T> endCatch) where T : Exception
+        public bool TryCatch<T>(Action Try, Action<T, byte> eachTimeCatch, Action<T> endCatch) where T : System.Exception
             => TryCatchNTimes(Try, eachTimeCatch, endCatch, TryTimes);
 
-        public static bool TryCatchNTimes<T>(Action Try, Action<T> Catch, byte tryTimes) where T : Exception
+        public static bool TryCatchNTimes<T>(Action Try, Action<T> Catch, byte tryTimes) where T : System.Exception
             => TryCatchNTimes(Try, null, Catch, tryTimes);
         public static bool TryCatchNTimes<T>(Action Try, Action<T, byte> eachTimeCatch, Action<T> endCatch, byte tryTimes)
-            where T : Exception
+            where T : System.Exception
         {
             var triedTime = byte.MaxValue;
             while (true)
