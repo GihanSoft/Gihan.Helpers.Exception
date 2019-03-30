@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -8,6 +8,20 @@
     <Version>0.1.0</Version>
     <Authors>Muhammad Babayi</Authors>
     <Company>GihanSoft</Company>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/chiefmb/Gihan.Helpers.Exception</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/chiefmb/Gihan.Helpers.Exception</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageTags>Exception, ExceptionHandling</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/chiefmb/Gihan.Helpers.Exception/master/Gihan.Helpers.Exception/gihansoft.ico</PackageIconUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
