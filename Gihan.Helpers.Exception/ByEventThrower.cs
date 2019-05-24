@@ -7,7 +7,6 @@ namespace Gihan.Helpers.Exception
         event ErrorEventHandler<T> ExceptionThrowed;
     }
 
-
     public class ByEventThrower<T> : IByEventThrower<T>
     {
         private T Owner { get; set; }
